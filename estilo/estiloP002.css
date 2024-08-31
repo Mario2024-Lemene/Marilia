@@ -61,10 +61,12 @@ section.img p{
     font-size: 1.3em;
 }
 section.img{
-    background-image: url("../img/background002.jpg");
+    background-color: var(--cor0);
+    background-image: url("../img/images.jfif");
     background-position: center center;
-    background-repeat: no-repeat;
+   
     background-attachment: fixed;
+    background-size: cover;
 }
 footer{
     background-color: var(--cor0);
