@@ -5,14 +5,22 @@
 }
 :root{
     --cor0: #f6b;
-    --cor1: #f6f;
+    --cor1: rgba(255, 102, 255, 0.525);
     --cor2: #f69;
     --cor3: #f36;
     --cor4: #e6e6e6;
 }
+@font-face {
+    font-family: Linda;
+    src: url("../fontes/MaoEscrita/PerfectBomberFreePersonalUse.ttf") format("Truetype");
+}
+@font-face {
+    font-family: Caligrafa;
+    src: url("../fontes/Bill/Billing\ Lottre.ttf") format("Truetype");
+}
 body, header, footer{
     min-width: 10vh;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
 }
 header{
     background-color: var(--cor1);
@@ -22,27 +30,46 @@ header{
     margin-bottom: 1em;
 }
 header h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:caligrafa ,Arial, Helvetica, sans-serif;
     padding-top: 30px;
 }
 header p{
     display: inline-block;
-    max-width: 200px;
+    max-width: 350px;
+    font-size: 2em;
+    font-family: linda, cursive, sans-serif;
+}
+a{
+    color: var(--cor4);
+    font-weight: 600;
+    text-decoration: none;
 }
 section{
     background-color: var(--cor4);
     margin-bottom: 2.5em;
     padding: 2em;
+    line-height: 2em;
 }
 
-section p{
+section.img p{
     line-height: 2em;
     background-color: var(--cor1);
     display:inline-block;
     padding: 20px;
+    font-family: Caligrafa ,cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3em;
 }
 section.img{
-    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    color: var(--cor4);
+    background-image: url("../img/background002.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+footer{
+    background-color: var(--cor0);
+}
+footer>p{
+    text-align: center;
+    padding: 10px;
 }
