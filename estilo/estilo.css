@@ -1,1 +1,30 @@
 @charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    min-width: 10vh;
+}
+main {
+    margin: auto;
+    height: 100vh;
+    background-color: violet;
+    position: relative;
+}
+article {
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-size: 8vw;
+}
+h1:hover{
+    background-color: rgb(238, 130, 206);
+    border-radius: 15px 15px 0px 0px;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+}
