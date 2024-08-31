@@ -4,10 +4,17 @@
     margin: 0px;
     min-width: 10vh;
 }
+:root{
+    --cor0: #f6b;
+    --cor1: #66ffbb;
+    --cor2: #fcd;
+    --cor3: #b2ffd9;
+    --cor4: #e6e6e6;
+}
 main {
     margin: auto;
     height: 100vh;
-    background-color: violet;
+    background-color: var(--cor0);
     position: relative;
 }
 article {
@@ -18,11 +25,13 @@ article {
     transform: translate(-50%, -50%);
 }
 h1{
+    color: var(--cor3);
     font-size: 8vw;
+    font-weight: lighter;
 }
 h1:hover{
-    background-color: rgb(238, 130, 206);
-    border-radius: 15px 15px 0px 0px;
+    background-color: var(--cor4);
+    border-radius: 10px 10px 0px 0px;
     transition: 1s;
 }
 a{
