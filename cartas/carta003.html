@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        :root {
+            --cor0: #f6b;
+            --cor1: rgba(255, 102, 255, 0.525);
+            --cor2: #f69;
+            --cor3: #f36;
+            --cor4: #e6e6e6;
+        }
+
+        main {
+            height: 100vh;
+            background-color: var(--cor1);
+            position: relative;
+        }
+
+        section {
+            position: absolute;
+            max-width: 350px;
+            background-color: var(--cor4);
+            padding: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--cor3);
+        }
+        .botao{
+            display: block;
+            margin: auto;
+            margin-top: 1em;
+            background-color: var(--cor3);
+            color: var(--cor4);
+            padding: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+    <title>Carta 3</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Carta 3</h1>
+            <p>
+                Isaías 58:11
+                Assim diz a palavra do Senhor no livro de Isaías 58:11, E o Senhor te guiará continuamente, e fartará a sua
+                alma em lugares secos, e fortificaras teus ossos; e será como um jardim regado e como um manancial cujas
+                águas nunca faltam
+                --fim das cartas
+            </p>
+            <p>
+                Marta Marilias, todas essas cartas so foram para provar o quanto tu me amas e a única coisa que tenho para falar é <strong>Eu te amo e não me arrependo de te amar</strong>
+            </p>
+            <input type="button" value="Clica no botão" class="botao">
+        </section>
+    </main>
+    <script>
+        const botao = document.querySelector("input")
+        botao.addEventListener("click",()=>{
+            alert("Só para lembrar predeste o desafio, caso tenhas chegado ate aqui\nTe amo")
+        })
+    </script>
+</body>
+
+</html>
