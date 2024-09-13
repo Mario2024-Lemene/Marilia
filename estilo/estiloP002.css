@@ -49,6 +49,8 @@ section{
     margin-bottom: 2.5em;
     padding: 2em;
     line-height: 2em;
+    font-size: 1.3em;
+    font-family:cursive , Arial, Helvetica, sans-serif;
 }
 
 section.img p{
@@ -64,9 +66,13 @@ section.img{
     background-color: var(--cor0);
     background-image: url("../img/images.jfif");
     background-position: center center;
-   
+
     background-attachment: fixed;
     background-size: cover;
+}
+section.img{
+    font-style: italic;
+    text-align: center;
 }
 footer{
     background-color: var(--cor0);
