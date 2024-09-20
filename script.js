@@ -3,7 +3,7 @@ const erro = document.querySelector("h2")
 let num = 1
 do{
 const nomeInicial = prompt("Deguite o seu nome: ")
-const nome = nomeInicial.toUpperCase()
+const nome = nomeInicial.toUpperCase().trim()
 if(nome == "MARTA"){
     alert("Nunca te chamo de Marta, tens que notar isso")
 }else if(nome == "MARILIA"){
