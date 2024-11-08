@@ -8,7 +8,7 @@
     <title>Página de Revelações</title>
 </head>
 
-<body>
+<body id="corpo">
     <header>
         <h1>Para minha Marilia favorita</h1>
         <p>Grande parte dos textos foram retirados dos livros da escritora <a
@@ -66,6 +66,30 @@
         <p>Criado por<a href="https://github.com/Mario2024-Lemene" target="_blank"> Dolvino Mario Lemene</a>, dedicado a
             pessoa que me faz sentir mais eu, para minha Marilia Favorita</p>
     </footer>
+    <script>
+        if (localStorage.getItem("contador")) {
+            const contador = Number(localStorage.getItem("contador"))
+            const soma = contador + 1
+            localStorage.setItem("contador", soma)
+            if(soma > 50){
+                window.addEventListener("load", ()=>{
+                    const main = document.querySelector("main")
+                    const footer = document.querySelector("footer")
+                    main.remove();
+                    footer.remove()
+                    const body = document.getElementById("corpo")
+                    const h1 = document.createElement("h1")
+                    const texto = document.createTextNode("Muito obrigado por teres estado ao meu lado")
+                    h1.appendChild(texto)
+                    body.appendChild(h1)
+                })
+            }
+        } else {
+            localStorage.setItem("contador", 1)
+            alert("Seja muito bem vinda ao teu site")
+        }
+     
+    </script>
 </body>
 
 </html>
